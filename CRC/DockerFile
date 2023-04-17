@@ -1,0 +1,7 @@
+FROM java:8
+
+EXPOSE 9898
+
+ADD target/CRC.jar CRC.jar
+
+ENTRYPOINT [ "java","-jar","CRC.jar" ]

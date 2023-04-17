@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee</title>
+<link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+<body style="background-color:powderblue;">
+<div class="container my-2" align="center">
+ 
+<h3>Student </h3>
+
+    <!-- <table style="width:80%" border="1"
+           class = "table table-striped table-responsive-md" >
+    <thead>
+  <tr>
+   <th bgcolor=66a3ff>UDID</th>
+    <th bgcolor=66a3ff>Name</th>
+    <th bgcolor=66a3ff>Father Name</th>
+    <th bgcolor=66a3ff>Mother</th>
+     <th bgcolor=66a3ff>DOB</th>
+       <th bgcolor=66a3ff>Gender</th>
+         <th bgcolor=66a3ff>Aadhaar No</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr >
+        <td th:text="${udid_number}" ></td>
+        <td th:text="${fullname}" ></td>
+        <td  th:text="${father_name}"></td>
+        <td  th:text="${mother_name}"></td>
+        <td  th:text="${dob}"></td>
+        <td  th:text="${gender}"></td>
+        <td  th:text="${aadhaar_no}"></td>
+       
+        
+       
+    
+  </tr>
+  </tbody>
+</table> -->
+<div>
+<div class=”row”>
+UDID
+<input type="text"  th:value="${udid_number}" class="form-control mb-4 col-4" readonly> 
+Name
+<input type="text" th:value="${fullname}" class="form-control mb-4 col-4" readonly> 
+Father Name
+<input type="text" th:value="${father_name}" class="form-control mb-4 col-4" readonly> 
+Mother Name
+<input type="text" th:value="${mother_name}" class="form-control mb-4 col-4" readonly> 
+DOB
+<input type="text" th:value="${dob}" class="form-control mb-4 col-4" readonly>
+ Gender
+<input type="text" th:value="${gender}" class="form-control mb-4 col-4" readonly> 
+Aadhaar
+<input type="text" th:value="${aadhaar_no}" class="form-control mb-4 col-4" readonly> 
+</div>
+
+
+
+
+</div>
+<hr>
+
+<a th:href="@{/}"> Back to Student List</a>
+</div>
+</body>
+</html>
